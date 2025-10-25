@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+
+/* the url which match the current path activate the hr tag  */
+a.active hr{
+    display: block;
+}
