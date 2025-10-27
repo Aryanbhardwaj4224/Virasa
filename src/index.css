@@ -1,7 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Prata&display=swap');
 @import "tailwindcss";
-
 *{
-    
+    font-family: Outfit;
     box-sizing: border-box;
 }
 
@@ -12,4 +12,10 @@ body {
 /* the url which match the current path activate the hr tag  */
 a.active hr{
     display: block;
+}
+
+.prata-regular {
+  font-family: "Prata", serif;
+  font-weight: 400;
+  font-style: normal;
 }
