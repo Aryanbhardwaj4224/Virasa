@@ -1,6 +1,14 @@
 @import "tailwindcss";
 
+*{
+    
+    box-sizing: border-box;
+}
 
+body {
+  background-color: #F9F6EE;
+  font-family: 'Inter', sans-serif; /* Or whichever font you are using */
+}
 /* the url which match the current path activate the hr tag  */
 a.active hr{
     display: block;
