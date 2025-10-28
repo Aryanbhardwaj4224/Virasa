@@ -1,10 +1,10 @@
 import { createContext } from "react";
 import { products } from "../assets/assets"; 
 // 1️⃣ Create Context 
-export const ShopContex = createContext();
+export const ShopContext = createContext();
 
 /*
-    (ShopContextProvider) is passing an array of objects (products) inside the value object.
+    (ShopContextProvider) component is passing an array of objects (products) inside the value object.
     Then it provides that data to all child components using the Context Provider.
 */ 
 
@@ -18,9 +18,9 @@ const ShopContextProvider = ({children})=>{
     }
     return (
         // 2️⃣ Provide Context 
-        <ShopContex.Provider value={value}>
+        <ShopContext.Provider value={value}>
             {children}
-        </ShopContex.Provider>
+        </ShopContext.Provider>
     )
 }
 

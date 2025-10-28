@@ -1,15 +1,16 @@
 import { ArrowLeft, Search, User, ShoppingCart, Menu } from 'lucide-react';
 import React, { useState } from "react";
 import { assets } from "../assets/assets";
-import { Link, NavLink } from "react-router-dom";
+import { Link, Links, NavLink } from "react-router-dom";
 import Cart from "../Pages/Cart";
 const Navbar = () => {
     const [visible,setVisible] = useState(false);
   return (
     <>
       <div className="flex items-center justify-between  font-medium bg-[#F9F6EE] px-4 md:px-8 ">
-        <img src={assets.logo} className="w-36" alt="" />
-
+        <Link to='/'>
+          <img src={assets.logo} className="w-36" alt="" />
+        </Link>
         <ul className=" sm:flex gap-5 text-sm text-[#1A1A1A] hidden">
           <NavLink to="/" className={"flex flex-col items-center gap-1 hover:text-[#800000]"}>
             <p>HOME</p>
